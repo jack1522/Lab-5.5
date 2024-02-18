@@ -1,50 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+
+:root {
+  --main-bg-color: #e9e9e9;
+  --prim-text-color: #424242;
+  --accent-color: #ff3f3c;
+  --inter-weight: 900;
+  --no-repeat-custom: no-repeat center left;
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+header h1 {
+  font-weight: 800;
+  font-size: 2em;
+  margin: 0;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-weight: var(--inter-weight);
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--prim-text-color);
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
+main {
+  background: url("/images/polaroid.png") no-repeat center 100px;
+  margin: 0 auto;
+  width: 900px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+.filmtophone {
+  min-height: 800px;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+.filmtophone h2 {
+  font-size: 9em;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+.details p {
+  font-size: 1.7em;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+.details ul li {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0 0 0 60px;
+  font-size: 1.4em;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+ul #wifi {
+  background: url(/images/wifi-solid.svg) var(--no-repeat-custom);
+  align-items: left;
 }
 
-img.about {
-    opacity: 0.5;
+ul #upload {
+  background: url(/images/cloud-arrow-up-solid.svg) var(--no-repeat-custom);
+}
+
+ul #qr {
+  background: url(/images/qrcode-solid.svg) var(--no-repeat-custom);
+  margin-left: 3px;
+}
+
+ul #sharevid {
+  background: url(/images/photo-film-solid.svg) var(--no-repeat-custom);
+}
+
+input[type="text"] {
+  margin-right: 10px;
+  width: 650px;
+  padding-left: 10px;
+  color: var(--prim-text-color);
+  border: none;
+  height: 49px;
+}
+
+input[type="button"] {
+  width: 150px;
+  height: 51px;
+  color: var(--main-bg-color);
+  background-color: var(--accent-color);
+  border: none;
+}
+.form-container {
+  background-color: #e2e2e2;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 110px;
 }
